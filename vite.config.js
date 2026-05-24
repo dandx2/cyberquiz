@@ -278,7 +278,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-  base: '/cyberquiz/',
+  base: '/',
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), selectionModePlugin()] : []),
