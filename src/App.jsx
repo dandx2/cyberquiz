@@ -6,7 +6,7 @@ import Quiz from '@/components/Quiz';
 import Results from '@/components/Results';
 import InitialCheck from '@/components/InitialCheck';
 import AdBanner from '@/components/AdBanner';
-import { supabase } from '@/lib/customSupabaseClient';
+import { supabase } from './lib/customSupabaseClient';
 import { useToast } from '@/components/ui/use-toast';
 
 const shuffleArray = (array) => {
