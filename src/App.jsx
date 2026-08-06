@@ -8,7 +8,7 @@ import InitialCheck from '@/components/InitialCheck';
 import AdBanner from '@/components/AdBanner';
 import { supabase } from './lib/customSupabaseClient';
 import { useToast } from '@/components/ui/use-toast';
-
+//test
 const shuffleArray = (array) => {
   return [...array].sort(() => Math.random() - 0.5);
 };
