@@ -173,6 +173,12 @@ const Quiz = ({ questions, onFinish }) => {
                 </h3>
               </div>
               <p className="text-slate-300">{currentQuestion.explanation}</p>
+{/* Objective Code & Description */}
+{(currentQuestion.categories || currentQuestion.category) && (
+  <p className="text-sm font-mono text-purple-300 mb-2">
+    {currentQuestion.categories?.objective_code || currentQuestion.category?.objective_code}: {currentQuestion.categories?.description || currentQuestion.category?.description}
+  </p>
+)}
             </div>
           </motion.div>
         )}
