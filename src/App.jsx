@@ -80,11 +80,10 @@ function App() {
 
     try {
       // Step 1: Fetch categories for the selected test
-      const { data: categories, error: catError } = await supabase
-        .from('categories')
-        .select('id')
-        .eq('test_id', selection.testId);
-
+ const { data: categories, error: catError } = await supabase
+    .from('categories')
+    .select('id, objective_code, description')
+    .eq('test_id', selection.testId);
       if (catError) {
         console.error('Error fetching categories:', catError);
         toast({
